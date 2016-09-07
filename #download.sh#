@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+####given the download link , the command below would dwnload the required binaries in to 'HMMER directory'
+wget -m $1 --directory-prefix=HMMER/

@@ -1,0 +1,393 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ./first5seq.fa
+# target HMM database:             ./Pfam/Pfam-A.hmm
+# output directed to file:         ./first5seq.fa.pfam
+# prefer accessions over names:    yes
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Eucgr.A00001.1.p  [L=670]
+Description: pacid=32049109 transcript=Eucgr.A00001.1 locus=Eucgr.A00001 ID=Eucgr.A00001.1.v2.0 annot-version=v2.0
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-26   93.5   0.0    2.2e-26   92.4   0.0    1.6  2  PF02889.14  Sec63 Brl domain
+    8.9e-19   67.2   0.2    2.6e-18   65.7   0.2    1.9  1  PF00226.29  DnaJ domain
+  ------ inclusion threshold ------
+      0.047   13.6   0.9      0.054   13.4   0.1    1.5  2  PF12822.5   ECF transporter, substrate-specific component
+        1.1    9.6   3.4        3.6    8.0   3.4    1.9  1  PF14812.4   Transmembrane domain of transglycosylase PBP1 at 
+        2.9    6.8   6.4        5.1    6.0   6.4    1.3  1  PF12226.6   Turkey astrovirus capsid protein
+
+
+Domain annotation for each model (and alignments):
+>> PF02889.14  Sec63 Brl domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.0   0.0       1.8   5.9e+03     232     247 ..     133     148 ..     123     151 .. 0.84
+   2 !   92.4   0.0   6.9e-30   2.2e-26      11     255 ..     222     588 ..     216     590 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -4.0 bits;  conditional E-value: 1.8
+                       SSCEEEEEEEEEESSS CS
+                       xxxxxxxxxxxxxxxx RF
+        PF02889.14 232 epgpkqltvrlisdsw 247
+                       +p  ++++v  is  +
+  Eucgr.A00001.1.p 133 DPEAHNYFVEYISKAY 148
+                       67789********988 PP
+
+  == domain 2  score: 92.4 bits;  conditional E-value: 6.9e-30
+                       HT--HHHHHHHHHHS-TT--HHHHHHHHHTSGGGTTS---TTHHHHHHHHHHTSSS--............S.SSTTSHHHHHHHHHHHHHTT- CS
+                       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx............x.xxxxxxxxxxxxxxxxxxxxx RF
+        PF02889.14  11 YyisyetiklfneslkpnttlkdlLeilssasEFeeipvReeEkkelkkLlekvpikv............k.ediespeaKvniLlqayisrl 90 
+                        y+ + t++++ + +kp    ++++e++ +a+EF eipvR+ +++ l+kL   v+ ++            k  +   p +K+ +L+qa++ r 
+  Eucgr.A00001.1.p 222 NYVMHHTLSNYYRLMKPSLAPSKVMEVFIKAAEFMEIPVRRTDEEPLQKLFLLVRSELnldlknikqeqaKfWKQHPPFVKTELLIQAQLTRE 314
+                       599**********************************************9966555555566778776542444557889**********765 PP
+
+                       -.-SSHHHHHHHHHHHHHHHHHHHHHHHHHH......HTTBHHHHHHHHHHHHHHHHTS-TT............................... CS
+                       x.xxxxxxxxxxxxxxxxxxxxxxxxxxxxx......xxxxxxxxxxxxxxxxxxxxxxxxx............................... RF
+        PF02889.14  91 k.legsdLvsDmkyilqnairilralveill......skgwlslalslleLskmveqrlwds............................... 145
+                       +   + +Lv D   +l+  +r+l+ l+++++       +gwl++a+ ++eLs+++ q++  s                               
+  Eucgr.A00001.1.p 315 SdSLSPALVGDFRRVLELTPRLLEELMKMAViprtaqGHGWLRPAIGVVELSQCIIQAVPLSakkttggssegiapflqlphisesvikriar 407
+                       414459******************99998763333225788*******************999****************************** PP
+
+                       ............................S--EEEEEEE......SEBTTSEEEEE..EEEEESSS...S.S...CTSSS-CCTSBEEEEEEEE CS
+                       ............................xxxxxxxxxx......xxxxxxxxxxx..xxxxxxxx...xxx...xxxxxxxxxxxxxxxxxxx RF
+        PF02889.14 146 ............................lPkleieaev......qpitreklrve..vtiereee...esk...pdfpwdkkgkaekfwlvve 196
+                                                   +P+l+i++++       ++  ++++++  vt++r++    +     p++p++k   +e+fw ++ 
+  Eucgr.A00001.1.p 408 kkvrtfqelrdislsstevqdiervlemMPSLSIDITCetegeeGIQEGDVVTIQawVTLKRDNGlvgA-LphaPRYPFHK---EESFWFLLA 496
+                       **********************************99998888865555666666622555555558751.2466*******...********* PP
+
+                       ETTTTEEEEEEEEEESSTTTTTEEEEE...................................EEEEEE--SSCEEEEEEEEEESSSSS-EEEE CS
+                       xxxxxxxxxxxxxxxxxxxxxxxxxxx...................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+        PF02889.14 197 dsetdellaikrvtlekkklastqevk...................................leftvplsepgpkqltvrlisdswlgldqev 254
+                       d++++ + ++++++++++  a ++  k                                    +f +p+  +g+++l++++++dsw+g+d++v
+  Eucgr.A00001.1.p 497 DPNSNDVWFSQKLSFMDEAAAVSAASKaieetmeglgadakekskavreavekvrsgsrlvmGKFLAPV--EGNYNLMCYCLCDSWIGCDKKV 587
+                       ***************988666544444788999**************************9977888866..569*****************98 PP
+
+                       E CS
+                       x RF
+        PF02889.14 255 t 255
+                       +
+  Eucgr.A00001.1.p 588 N 588
+                       5 PP
+
+>> PF00226.29  DnaJ domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.7   0.2   8.1e-22   2.6e-18       2      62 ..     100     160 ..      99     161 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 65.7 bits;  conditional E-value: 8.1e-22
+                       HHHHHTSSTTG-HHHHHHHHHHHHHHTSTTTSCCCHCHHHHHH.HHHHHHHHHTSHHHHHHH CS
+        PF00226.29   2 yYevLgvskdasedeIkkaYrklalkyHPDknpkdpeaeekFk.eineAyevLsdpekRkqY 62 
+                       ++++Lg++  as++eIkkaYr+l+++yHPDkn  dpea++ F   i++Ay+ L+dp +++++
+  Eucgr.A00001.1.p 100 PFSILGLEAGASDSEIKKAYRRLSIQYHPDKN-PDPEAHNYFVeYISKAYQALTDPISKENF 160
+                       689*****************************.9999*****846***********999987 PP
+
+>> PF12822.5  ECF transporter, substrate-specific component
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   0.1   1.7e-05     0.054      72     138 ..      11      93 ..       3     153 .. 0.88
+   2 ?   -3.6   0.1       2.9   9.3e+03      83      83 ..     203     203 ..     175     223 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 1.7e-05
+                       HHHHHHHHHHHCHHHHHHHHHHCCCHTTHHHH...................HHHHHHHHCCCCCHHHHHHHCCCHHHHS....... CS
+         PF12822.5  72 sfvpiaflsriligliagllykkgkkknrkei...................vvsfilagvlgtivatllvlliilplylklktaka 138
+                       +  pi++l+ ++++l+++ + k  +  ++k +                   +  +   + +++++ +ll++++i+++y ++k+++ 
+  Eucgr.A00001.1.p  11 F--PIFILTIMALPLVPYTVMKLCHAATKKSKithcqcseclrsgkyrrsiFKRISTFSTCSNLTLVLLWIVMIFLVY-YIKNMSG 93 
+                       2..9*****************999999999999*****************9888999999**************9999.5555543 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 2.9
+                       C CS
+         PF12822.5  83 l 83 
+                       l
+  Eucgr.A00001.1.p 203 L 203
+                       1 PP
+
+>> PF14812.4  Transmembrane domain of transglycosylase PBP1 at N-terminal
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.0   3.4    0.0011       3.6      32      63 ..     619     651 ..     597     660 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.0011
+         PF14812.4  32 dddydd.eyddeedddddddeeeevprkgkkkk 63 
+                       +++ d+ eyd+e++  +d+ +e+++ +kgk+++
+  Eucgr.A00001.1.p 619 EEESDEeEYDYESEYSEDEADEQDSKKKGKTAN 651
+                       444444478888888888889999999988654 PP
+
+>> PF12226.6  Turkey astrovirus capsid protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   6.4    0.0016       5.1     230     266 ..     607     643 ..     586     649 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.0016
+                       ...XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX CS
+         PF12226.6 230 aeeeisdpsdeedeevsdeetdtevesdeDeddevdr 266
+                        ee i+++  ee+ee ++ee d+e e  eDe de d 
+  Eucgr.A00001.1.p 607 LEESIVEDGIEEEEESDEEEYDYESEYSEDEADEQDS 643
+                       46778888888888999*****************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (670 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                      1381  (0.0846928); expected 326.1 (0.02)
+Passed bias filter:                      873  (0.0535386); expected 326.1 (0.02)
+Passed Vit filter:                       100  (0.00613271); expected 16.3 (0.001)
+Passed Fwd filter:                         5  (0.000306636); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.89u 0.76s 00:00:01.65 Elapsed: 00:00:00.56
+# Mc/sec: 3362.73
+//
+Query:       Eucgr.A00003.1.p  [L=276]
+Description: pacid=32047421 transcript=Eucgr.A00003.1 locus=Eucgr.A00003 ID=Eucgr.A00003.1.v2.0 annot-version=v2.0
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    2.3e-39  134.0   0.1      3e-39  133.6   0.1    1.1  1  PF10184.7  Uncharacterized conserved protein (DUF2358)
+    0.00052   20.5   0.0    0.00087   19.8   0.0    1.3  1  PF12680.5  SnoaL-like domain
+     0.0007   18.7   0.0      0.069   12.2   0.0    2.1  2  PF17119.3  Mitochondrial protein up-regulated during meiosis
+
+
+Domain annotation for each model (and alignments):
+>> PF10184.7  Uncharacterized conserved protein (DUF2358)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.6   0.1   5.5e-43     3e-39       3     113 .]      92     202 ..      90     202 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 133.6 bits;  conditional E-value: 5.5e-43
+         PF10184.7   3 vveiLredlpklFekeqdysiYsedviFedpltkfkglerYkkilallrflgrlffadvklellkitqseeneikarWtlrgiprlpwkpklv 95 
+                       +v++Lred+p lF+k+ +y+iY++d++F dpl++f+g+++Yk i+++lrf+g++ f+d++le+ +i+q +en i +rW+l+g+pr+pw++k  
+  Eucgr.A00003.1.p  92 AVRTLREDMPLLFTKDLNYDIYRDDITFVDPLNTFTGIDNYKLIFWALRFHGKILFRDISLEVYRIWQPSENMILIRWNLKGVPRVPWEAKGE 184
+                       5899***************************************************************************************** PP
+
+         PF10184.7  96 fdGlselklnkdglivsH 113
+                       f+G+s +kl+++g+i++H
+  Eucgr.A00003.1.p 185 FQGTSRYKLDRKGKIYEH 202
+                       *****************9 PP
+
+>> PF12680.5  SnoaL-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   0.0   1.6e-07   0.00087      18     102 .]     111     202 ..     106     202 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 1.6e-07
+                       HTEEEEEEEEETTSEEESHHHHHHHHHHHHH....HEEEEEEEEEEE.EEETTEEEEEEEEEEE..EETTSSEEEEEEEEEEEE.ETTEEEEE CS
+         PF12680.5  18 alfapdvvwedpggelrGreairaffaaafa....afpdlrfeiedv.vadgdrvavewtvtgt..ipatgrgvtvrgvdvfrv.edGkIvev 102
+                       +++ +d+++ dp+++++G++ ++  f+a++      f d+  e+ ++   +++ ++++w ++g   +p + +g +++g++ +++ + GkI e+
+  Eucgr.A00003.1.p 111 DIYRDDITFVDPLNTFTGIDNYKLIFWALRFhgkiLFRDISLEVYRIwQPSENMILIRWNLKGVprVPWEAKG-EFQGTSRYKLdRKGKIYEH 202
+                       5799********************888887668999999999999998889999999*****99965555555.99********99****997 PP
+
+>> PF17119.3  Mitochondrial protein up-regulated during meiosis
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   1.3e-05     0.069       7      51 ..      74     118 ..      68     123 .. 0.88
+   2 !    4.3   0.0    0.0031        17     193     220 ..     178     205 ..     167     209 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.3e-05
+         PF17119.3   7 ekekdkkppdeRilkLGktlriLserLPtlLvnpLPqeiLsPsit 51 
+                       ++ek+++  d+  ++LG  +r+L+e +P l ++ L  +i   +it
+  Eucgr.A00003.1.p  74 REEKENQERDDFFVNLGLAVRTLREDMPLLFTKDLNYDIYRDDIT 118
+                       567888899999************************999988887 PP
+
+  == domain 2  score: 4.3 bits;  conditional E-value: 0.0031
+         PF17119.3 193 klekeeeftGlfifefDeeGRiathtie 220
+                         e ++ef+G   ++ D +G+i +h ++
+  Eucgr.A00003.1.p 178 PWEAKGEFQGTSRYKLDRKGKIYEHKVD 205
+                       567889*******************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (276 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       318  (0.019502); expected 326.1 (0.02)
+Passed bias filter:                      231  (0.0141666); expected 326.1 (0.02)
+Passed Vit filter:                        26  (0.00159451); expected 16.3 (0.001)
+Passed Fwd filter:                         3  (0.000183981); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.50u 0.33s 00:00:00.83 Elapsed: 00:00:00.42
+# Mc/sec: 1879.97
+//
+Query:       Eucgr.A00004.1.p  [L=288]
+Description: pacid=32048217 transcript=Eucgr.A00004.1 locus=Eucgr.A00004 ID=Eucgr.A00004.1.v2.0 annot-version=v2.0
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.9e-38  129.4   0.9    5.9e-38  129.4   0.9    2.1  2  PF00134.21  Cyclin, N-terminal domain
+    3.5e-31  107.6   0.8    6.7e-31  106.7   0.8    1.5  1  PF02984.17  Cyclin, C-terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> PF00134.21  Cyclin, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  129.4   0.9   7.2e-42   5.9e-38       1     127 []      37     163 ..      37     163 .. 0.98
+   2 ?    1.5   0.4     0.027   2.2e+02      44      85 ..     177     218 ..     168     254 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 129.4 bits;  conditional E-value: 7.2e-42
+                       HHHHHHHHHHHCTSSSTTTTCCTSSS-HHHHHHHHHHHHHHHHHTT--TTHHHHHHHHHHHHHHHS.--CCCHHHHHHHHHHHHHHHHSSS-- CS
+        PF00134.21   1 diltnllekelkkkpnskyidqqpelnpemrailidwlvevsekfkltqetlylavnyldRflskrsvkkdklqlvgatcLllAaKveevrpp 93 
+                       di++++ ++e+      +y+++q++++p+mraili+wl+ev+ kf+l++etlyl v++ldR+ls+ s++k+++qlvg+t+Lll++K+e+ + p
+  Eucgr.A00004.1.p  37 DIYEYYWNTEAYGAGLANYMSIQTDITPKMRAILINWLIEVHFKFDLMHETLYLMVTLLDRYLSQVSIQKKEMQLVGLTALLLSSKYEDFWHP 129
+                       79999999999999999**************************************************************************** PP
+
+                       -HHHHHHHTTTSS-HHHHHHHHHHHHHHTTT--- CS
+        PF00134.21  94 tledlvyitdgafteeeilemErliLetLnfdls 127
+                       +++dl+ i+ +++t+e++l mE+ iL++L+f+l+
+  Eucgr.A00004.1.p 130 RIKDLISISAESYTREQMLGMEKSILKQLKFRLN 163
+                       *******************************996 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.027
+                       HTT--TTHHHHHHHHHHHHHHHS.--CCCHHHHHHHHHHHHH CS
+        PF00134.21  44 kfkltqetlylavnyldRflskrsvkkdklqlvgatcLllAa 85 
+                         +  ++  +la  +++  l +    + k  l++a++L++A 
+  Eucgr.A00004.1.p 177 AAHSDKKLEHLAFYLIELCLVEYEALEFKPSLLCASALYVAR 218
+                       444555556777777777777778889999999999999984 PP
+
+>> PF02984.17  Cyclin, C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  106.7   0.8   8.2e-35   6.7e-31       1     118 [.     165     281 ..     165     282 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 106.7 bits;  conditional E-value: 8.2e-35
+                       --HHHHHHHHHCCSSHT.-HCCHHCHHCHHHHHHHSHHHCCS-HHHHHHHHHHHCCHHH.HS--S-HHHHHHC---HHHHHHHHHHHHHHHHH CS
+        PF02984.17   1 ptplsFlrrflkaadaskdaelrtlakylleltlldydfleyppSliAaaalllarktl.nspewtetlehytgyskedlkecvelilellkr 92 
+                       ptp++F+ rflkaa +  d++l++la yl+el+l++y+ le++pSl+ a+al++ar+tl  sp wt+ l  + +y++++++ c+e+il ++k 
+  Eucgr.A00004.1.p 165 PTPYVFMLRFLKAAHS--DKKLEHLAFYLIELCLVEYEALEFKPSLLCASALYVARCTLqMSPAWTPLLIRHARYEVSQIRVCAEMILRFHKA 255
+                       9************555..89***************************************77888***************************** PP
+
+                       HHGSS--HHHCCTTCGGGCCCGGS-- CS
+        PF02984.17  93 apssklqavrrkyssskfhkvstlse 118
+                       a+ ++l+ +++ky  s+ ++v+++ +
+  Eucgr.A00004.1.p 256 ARLAQLKVTYEKYMGSDLGCVAAIKP 281
+                       ********************998865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (288 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       387  (0.0237336); expected 326.1 (0.02)
+Passed bias filter:                      254  (0.0155771); expected 326.1 (0.02)
+Passed Vit filter:                        23  (0.00141052); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.44u 0.32s 00:00:00.76 Elapsed: 00:00:00.39
+# Mc/sec: 2112.61
+//
+Query:       Eucgr.A00005.1.p  [L=194]
+Description: pacid=32048918 transcript=Eucgr.A00005.1 locus=Eucgr.A00005 ID=Eucgr.A00005.1.v2.0 annot-version=v2.0
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (194 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       426  (0.0261254); expected 326.1 (0.02)
+Passed bias filter:                      241  (0.0147798); expected 326.1 (0.02)
+Passed Vit filter:                        21  (0.00128787); expected 16.3 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.47u 0.28s 00:00:00.75 Elapsed: 00:00:00.38
+# Mc/sec: 1460.53
+//
+Query:       Eucgr.A00006.1.p  [L=434]
+Description: pacid=32046179 transcript=Eucgr.A00006.1 locus=Eucgr.A00006 ID=Eucgr.A00006.1.v2.0 annot-version=v2.0
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-41  140.0   0.0    1.1e-40  139.0   0.0    1.5  1  PF02739.14  5'-3' exonuclease, N-terminal resolvase-like doma
+    2.2e-26   92.1   0.0    3.5e-26   91.5   0.0    1.3  1  PF01367.18  5'-3' exonuclease, C-terminal SAM fold
+
+
+Domain annotation for each model (and alignments):
+>> PF02739.14  5'-3' exonuclease, N-terminal resolvase-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  139.0   0.0   1.3e-44   1.1e-40       1     159 []     104     295 ..     104     295 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 139.0 bits;  conditional E-value: 1.3e-44
+        PF02739.14   1 kllLiDgsslifRayyal..........lttsdgeptnavygflnmllklleeekpthlavvfDak..................kktfRhely 65 
+                       +++LiDg+s+i+Rayy+l              +g ++ ++++ l++++++le + p+h+avvfD++                  + +fRh+ly
+  Eucgr.A00006.1.p 104 RVMLIDGTSVIYRAYYKLlarlhhghlpHADGNGDWVLTIVTALSLIIDVLE-FGPSHVAVVFDHDgipfghtfnqskesfmakGLNFRHTLY 195
+                       589**************87886666544334489*****************9.8999*******8669*************999889****** PP
+
+        PF02739.14  66 peYKanReetpeelkeqlplikevlealgikvlevegyEADDvigtlakr.aeeeg..vvivsgDkDllQlvednvrvld....vkkeellde 151
+                       p+YK+nR++tp+++ + l+++k+ ++a++ikv+ev+g+EADDvigtla r +e +g  v++vs+DkD++Q+++++ r+l+    + +++ +++
+  Eucgr.A00006.1.p 196 PTYKSNRPPTPDTIVQGLQYLKASIKAMSIKVIEVPGVEADDVIGTLAVRsVE-AGykVRVVSPDKDFFQILSPSLRLLRiaprGLDMVSFGM 287
+                       **************************************************555.4345**************99******8765333446999 PP
+
+        PF02739.14 152 eevaekyg 159
+                       e++a+kyg
+  Eucgr.A00006.1.p 288 EDFAKKYG 295
+                       99999997 PP
+
+>> PF01367.18  5'-3' exonuclease, C-terminal SAM fold
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   91.5   0.0   4.3e-30   3.5e-26       2      95 ..     298     394 ..     297     396 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 91.5 bits;  conditional E-value: 4.3e-30
+        PF01367.18   2 kPeqiidlkaLvGDssDnipGvpgiGektAakLlkeygsleailenldelkekklkekLeenkeearlskkLatiktdvp...leleledlkl 91 
+                        P+q++d+ +LvGD+ DnipGv+giG+  A++L++++g+le++l+ +d+++e++++++L +++++a lsk+La i+td+p   +++++edl++
+  Eucgr.A00006.1.p 298 DPSQFVDVVSLVGDKCDNIPGVEGIGNVHAVQLITKFGTLENLLQCVDQVEEERIRKALIAQADNAILSKNLALIRTDLPfymVPFTTEDLAF 390
+                       69****************************************************************************997778999***999 PP
+
+        PF01367.18  92 kepd 95 
+                       k+p+
+  Eucgr.A00006.1.p 391 KKPE 394
+                       9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (434 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       290  (0.0177849); expected 326.1 (0.02)
+Passed bias filter:                      285  (0.0174782); expected 326.1 (0.02)
+Passed Vit filter:                        24  (0.00147185); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.52u 0.35s 00:00:00.87 Elapsed: 00:00:00.39
+# Mc/sec: 3183.59
+//
+[ok]
