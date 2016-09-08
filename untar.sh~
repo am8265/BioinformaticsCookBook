@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-path=find HMMER/ -name "*.tar.gz"
-tar -xzf $path -C ./HMMER/
-
