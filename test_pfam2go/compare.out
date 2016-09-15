@@ -1,0 +1,5 @@
+peptide_id_phytozome	pfam_id_phytozome	go_id_phytozome	pfam_id_wflow	go_id_wflw
+Eucgr.A00004.1.p	PF02984,PF00134	GO:GO:0005634	['PF00134', 'PF02984']	['none', ['nucleus ; GO:0005634']]
+Eucgr.A00006.1.p	PF01367,PF02739	GO:GO:0003824,GO:GO:0003677	['PF02739', 'PF01367']	[['DNA binding ; GO:0003677'], ['DNA binding ; GO:0003677', 'catalytic activity ; GO:0003824']]
+Eucgr.A00003.1.p	PF10184		['PF12680', 'PF10184', 'PF17119']	['none', 'none', 'none']
+Eucgr.A00001.1.p	PF00226,PF02889	GO:GO:0031204,GO:GO:0008565	['PF02889', 'PF00226']	['none', 'none']
